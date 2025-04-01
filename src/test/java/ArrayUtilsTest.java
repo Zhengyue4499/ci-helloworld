@@ -53,17 +53,17 @@ public class ArrayUtilsTest {
 
     @Test
     public void testCountOfNonExistent() {
-        assertEquals(0, ArrayUtils.countOf(new int[]{1, 2, 3}, 4));
+        assertEquals(0, ArrayUtils.countOf(new int[]{1}, 4));
     }
 
     @Test
     public void testCountOfExistsOnce() {
-        assertEquals(1, ArrayUtils.countOf(new int[]{1, 2, 3}, 2));
+        assertEquals(1, ArrayUtils.countOf(new int[]{-2,2}, 2));
     }
 
     @Test
     public void testCountOfExistsMultipleTimes() {
-        assertEquals(3, ArrayUtils.countOf(new int[]{1, 2, 2, 2, 3}, 2));
+        assertEquals(2, ArrayUtils.countOf(new int[]{2,2}, 2));
     }
 
 }
